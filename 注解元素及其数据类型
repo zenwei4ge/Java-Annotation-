@@ -1,0 +1,29 @@
+/**
+ * Created by wuzejian on 2017/5/18.
+ * 对应数据表注解
+ */
+@Target(ElementType.TYPE)//只能应用于类上
+@Retention(RetentionPolicy.RUNTIME)//保存到运行时
+public @interface DBTable {
+    String name() default "";
+}
+
+上述定义一个名为DBTable的注解，声明一个String类型的name元素，其默认值为空字符
+@DBTable使用方式如下：
+
+//在类上使用该注解
+@DBTable(name = "MEMBER")
+public class Member {
+    //.......
+}
+
+注解支持的元素数据类型
+所有基本类型（int,float,boolean,byte,double,char,long,short）
+
+String
+
+Class
+
+enum
+
+Annotation
