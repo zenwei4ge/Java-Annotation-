@@ -5,7 +5,7 @@
   * [注解元素及其数据类型](https://github.com/zenwei4ge/Java-Annotation-/blob/master/%E6%B3%A8%E8%A7%A3%E5%85%83%E7%B4%A0%E5%8F%8A%E5%85%B6%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
    * 元素必须要么具有默认值，要么在使用注解时提供元素的值
   * 注解不支持继承,不能使用关键字extends来继承某个@interface
-  * 快捷方式
+  * [快捷方式](https://github.com/zenwei4ge/Java-Annotation-/blob/master/%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F)
   * Java内置注解与其它元注解
 * 注解与反射机制
 * 运行时注解处理器
