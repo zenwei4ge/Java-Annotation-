@@ -1,0 +1,20 @@
+实际上Java注解与普通修饰符(public、static、void等)的使用方式并没有多大区别，下面的例子是常见的注解：
+`
+public class AnnotationDemo {
+    //@Test注解修饰方法A
+    @Test
+    public static void A(){
+        System.out.println("Test.....");
+    }
+
+    //一个方法上可以拥有多个不同的注解
+    @Deprecated
+    @SuppressWarnings("uncheck")
+    public static void B(){
+
+    }
+}
+`
+@Test注解后，在运行该方法时，测试框架会自动识别该方法并单独调用
+@Deprecated注解时，说明该方法或是类都已经过期不建议再用
+@SuppressWarnings 则表示忽略指定警告
